@@ -151,7 +151,7 @@ def visualize_policy(policy):
               
         policy_mat.append(optimal_action)
         
-        print("".join(optimal_action), end=" ")
+        print("".join(optimal_action), end="\t")
         c += 1
         if c == 5:
             print("\n")
@@ -348,7 +348,7 @@ if __name__ == "__main__":
     # pprint.pp(V)
     # print("##############from policy iteration#################")
     V, policy = policy_iter(P)
-    print(policy)
+    # print(policy)
     # print(V)
     # # print(V)
     # print("##############from value iteration#################")
